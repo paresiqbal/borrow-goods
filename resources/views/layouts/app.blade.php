@@ -6,7 +6,6 @@
     <title>Goods Lending App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100">
