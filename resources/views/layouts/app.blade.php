@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Goods Lending App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Assuming Tailwind is already installed and built into your app.css -->
+    @vite('resources/css/app.css')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
