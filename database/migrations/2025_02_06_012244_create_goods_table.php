@@ -9,8 +9,6 @@ class CreateGoodsTable extends Migration
     public function up()
     {
         Schema::create('goods', function (Blueprint $table) {
-            // Explicitly set the engine to InnoDB
-            $table->engine = 'InnoDB';
             $table->id();
             $table->string('name');
             $table->string('category');

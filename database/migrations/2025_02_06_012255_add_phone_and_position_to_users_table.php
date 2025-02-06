@@ -6,10 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class AddPhoneAndPositionToUsersTable extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('phone')->nullable()->after('email');
@@ -17,10 +14,7 @@ class AddPhoneAndPositionToUsersTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn(['phone', 'position']);
