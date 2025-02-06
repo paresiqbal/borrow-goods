@@ -9,6 +9,8 @@ class CreateLoansTable extends Migration
     public function up()
     {
         Schema::create('loans', function (Blueprint $table) {
+            // Explicitly set the engine to InnoDB
+            $table->engine = 'InnoDB';
             $table->id();
             $table->foreignId('borrower_id')->constrained('users');
             $table->foreignId('good_id')->constrained('goods');
