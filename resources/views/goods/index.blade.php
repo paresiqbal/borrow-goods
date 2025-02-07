@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="text-2xl font-bold mb-4">Goods Management</h1>
-    <a href="{{ route('goods.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <a href="{{ route('goods.create') }}" class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Add New Good
     </a>
     <div class="mt-6 overflow-x-auto">
