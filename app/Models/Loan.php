@@ -17,13 +17,11 @@ class Loan extends Model
         'loan_status'
     ];
 
-    // The borrower relationship (assuming using default User model for borrowers)
     public function borrower()
     {
         return $this->belongsTo(\App\Models\User::class, 'borrower_id');
     }
 
-    // Relationship to the Good model
     public function good()
     {
         return $this->belongsTo(Good::class);

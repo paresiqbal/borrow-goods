@@ -24,7 +24,6 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    // A borrower (user) can have many loans
     public function loans()
     {
         return $this->hasMany(\App\Models\Loan::class, 'borrower_id');
